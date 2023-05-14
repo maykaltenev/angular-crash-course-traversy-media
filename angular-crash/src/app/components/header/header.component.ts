@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   title: string = 'Task Tracker';
   showAddTask: boolean | undefined;
   subscription: Subscription | undefined;
